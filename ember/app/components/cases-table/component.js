@@ -38,6 +38,7 @@ export default class CasesTableComponent extends Component {
     this.fetchCases.perform();
   }
 
+  // TODO Use caluma caseQuery API for the future
   @restartableTask
   *fetchCases(cursor = null) {
     try {
